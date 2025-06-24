@@ -4,7 +4,7 @@ import { ErrorPage } from '@/components/404'
 import { ProtectedRoute } from '@/auth'
 import { Role } from '@/types/auth'
 
-export default function AppRoutes() {
+export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
