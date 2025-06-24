@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { getCurrentUser, isTokenValid, logout } from '@/services/auth-service'
 import type { UserPayload, AuthContextType } from '@/types/auth'
 import { AuthContext } from './AuthContext'
-import { TOKEN_KEY } from '../services/auth-service';
+import { TOKEN_KEY } from '@/services/auth-service';
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<UserPayload | null>(null)

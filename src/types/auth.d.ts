@@ -1,15 +1,4 @@
 /**
- * @description this type defines the possible roles a user can have in the application.
- * @enum {string} Role
- * @property {string} ADMIN - Represents an administrator role with full access.
- * @property {string} USER - Represents a regular user role with limited access.
- */
-export enum Role {
-  ADMIN = 'admin',
-  USER = 'user',
-}
-
-/**
  * @description This interface represents the context type for authentication.
  * @interface AuthContextType
  * @property {UserPayload | null} user - The current user object or null if not authenticated.
