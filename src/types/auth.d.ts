@@ -12,7 +12,7 @@ export type Role = 'admin' | 'user';
  * @property {boolean} isAuthenticated - Indicates if the user is authenticated.
  * @property {() => void} logout - Function to log out the user.
  */
-interface AuthContextType {
+export interface AuthContextType {
   user: UserPayload | null;
   isAuthenticated: boolean;
   logout: () => void;
