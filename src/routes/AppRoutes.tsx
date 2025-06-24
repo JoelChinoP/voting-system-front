@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import LoginPage from '@/pages/LoginPage'
-import HomePage from '@/pages/HomePage'
+import { HomePage, LoginPage } from '@/pages'
 import { ErrorPage } from '@/components/404'
 import { ProtectedRoute } from '@/auth'
 import { Role } from '@/types/auth'
