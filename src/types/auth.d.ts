@@ -22,6 +22,19 @@ export interface AuthContextType {
   logout: () => void;
 }
 
+/**
+ * @description This interface represents the user object returned from the API.
+ * @interface AuthResponse
+ * @property {boolean} success - Indicates if the authentication was successful.
+ * @property {string} message - A message from the server, usually for error handling.
+ * @property {string} [token] - The authentication token, if the authentication was successful.
+ */
+export interface AuthResponse {
+  success: boolean;
+  message: string;
+  token: string;
+}
+
 /** 
  * @description This interface represents the payload structure for user authentication.
  * @interface UserPayload
